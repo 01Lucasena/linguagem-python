@@ -26,21 +26,25 @@ while True:
                
                 os.system("cls||clear")
                 print("\nIdade inválida")
+                idade = int(input("Digite sua idade: "))
           
             salario = int(input("Digite seu salário: "))
 
             while salario < 0:
 
                 os.system("cls||clear")
-                print("\nSalário inválido.")    
+                print("\nSalário inválido.")
+                salario = int(input("Digite seu salário: "))
+    
 
-            sexo = input("Digite seu sexo: ")
+            sexo = str(input("Digite seu sexo: "))
             sexo = sexo.upper()
                     
-            while sexo != 'M' and sexo != 'F':
+            while sexo != "M" and sexo != "F":
 
                  os.system("cls||clear")
                  print("\nSexo inválido")
+                 sexo = str(input("Digite seu sexo: "))
 
             somaSalario += salario
 
@@ -52,7 +56,7 @@ while True:
 
                 menorIdade = idade
 
-            if sexo == 'f' and salario >= 5000:
+            if sexo == "F" and salario >= 5000:
 
                 mulheresSalario5k += 1     
 
@@ -74,6 +78,4 @@ while True:
         case _:
             os.system("cls||clear")
             print("\nOpção inválida.")
-            
-
             
