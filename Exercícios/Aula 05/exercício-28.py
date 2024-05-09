@@ -45,7 +45,8 @@ while True:
                  os.system("cls||clear")
                  print("\nSexo inválido")
                  sexo = str(input("Digite seu sexo: "))
-
+                 sexo = sexo.upper()
+            
             somaSalario += salario
 
             if idade > maiorIdade:
@@ -62,20 +63,20 @@ while True:
 
         case '2':
 
-            if i == 0:
+            while i == 0:
                 os.system("cls||clear")
                 print("\nNenhuma pessoa adicionada.")
                 break
 
-            else:
+            if i != 0:
 
                 print(f"Mulheres com salário acima de R$ 5.000: {mulheresSalario5k}")
                 print(f"Maior idade: {maiorIdade}")
                 print(f"Menor idade: {menorIdade}")
                 mediaSalarial = somaSalario / i
                 print(f"Média salarial: {mediaSalarial}")
+                break
 
         case _:
             os.system("cls||clear")
-            print("\nOpção inválida.")
-            
+            print("\nOpção inválida.") 
