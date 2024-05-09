@@ -18,26 +18,28 @@ while True:
     match opcao:
 
         case 's':
-
+            os.system("cls||clear")
             i += 1
             nota = float(input("\nInsira uma nota: "))
             soma += nota
         
         case 'p':
-
+            os.system("cls||clear")
             print(f"Quantidade de notas inseridas: {i}")
         
         case 'n':
 
             if i == 0:
+                os.system("cls||clear")
                 print("\nNenhuma nota inserida.")
                 break
 
             else:
+                os.system("cls||clear")
                 media = soma / i
                 print(f"Média: {media}")
                 break
         
         case _:
-
-            print("Opção inválida")
+            os.system("cls||clear")
+            print("\nOpção inválida")
