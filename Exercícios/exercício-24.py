@@ -29,8 +29,8 @@ while True:
         
         case 'n':
 
-            if i == 1:
-                print("Nenhuma nota inserida.")
+            if i == 0:
+                print("\nNenhuma nota inserida.")
                 break
 
             else:
